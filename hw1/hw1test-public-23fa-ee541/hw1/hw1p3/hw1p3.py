@@ -9,4 +9,9 @@ import sys
 def secant(a,b):
     if not (a < b or f(a)*f(b) < 0 or len(sys.argv) != 2):
         print('Range error', file=sys.stderr)
+        return
+    
+    
+        
+
         
