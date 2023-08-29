@@ -15,9 +15,18 @@ def secant(a,b):
     x2 = b
     x1 = a
     x3 = 0
+    iterations = 0
     
-    while (a ):
-        x3 = x2 - (f(x1) * (x2 - x1)/(f(x2) - f(x3)) )
+    while ( abs(x3 - x2) >= 10**-10 or abs(x2 - x1) >= 10**-10 ):
+        x3 = x2 - (f(x2) * (x2 - x1)/(f(x2) - f(x1)))
+        iterations += 1
+        
+    print(iterations)
+    print(x3)
+    print(x2)
+    print(x1)
+        
+    
         
 
         
