@@ -11,7 +11,13 @@ def secant(a,b):
         print('Range error', file=sys.stderr)
         return
     
+    # while not within convergence
+    x2 = b
+    x1 = a
+    x3 = 0
     
+    while (a ):
+        x3 = x2 - (f(x1) * (x2 - x1)/(f(x2) - f(x3)) )
         
 
         
